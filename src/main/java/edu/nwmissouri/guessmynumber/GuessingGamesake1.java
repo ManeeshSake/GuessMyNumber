@@ -12,7 +12,7 @@ import javax.swing.*;
  * https://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html
  * .showInputDialog() .showMessageDialog()
  *
- * @author Denise Case
+ * @author Maneesh Sake
  */
 public class GuessingGamesake1 {
 
@@ -44,8 +44,8 @@ public class GuessingGamesake1 {
         // TODO: Instead of "Try Number" which sounds like we should try that as a guess...
         // Say "You've used " + count + guesses.
         // If count is one, use "guess", else use "guesses" HINT: Ternary operator
-        String s= (count ==1) ? " guess." : " guesses.";
-        if (userAnswer <= 0 || userAnswer > 100) {
+        String s=(count ==1) ? " guess." : " guesses.";
+        if (userAnswer <= 0 || userAnswer > 100) {     
             return "Your guess is invalid";
         } else if (userAnswer == computerNumber) {
             return "Correct!\nTotal Guesses: " + count;
